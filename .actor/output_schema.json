@@ -1,0 +1,16 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Website Contact Extractor Output",
+    "properties": {
+        "overview": {
+            "type": "string",
+            "title": "Extracted Contacts Overview",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        },
+        "json": {
+            "type": "string",
+            "title": "Raw JSON Output",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

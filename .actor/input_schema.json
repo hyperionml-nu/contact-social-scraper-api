@@ -1,0 +1,38 @@
+{
+  "title": "Website Contact Information Extractor",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Website URLs",
+      "type": "array",
+      "description": "Enter one or more website URLs to extract contact information from.",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://www.cooley.com",
+          "description": "Example website (you can change this)"
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "title": "Website URL",
+            "description": "Full website URL including https://"
+          }
+        },
+        "required": ["url"]
+      }
+    },
+    "maxPagesPerDomain": {
+      "title": "Max pages per domain",
+      "type": "integer",
+      "description": "Maximum number of pages to crawl per domain.",
+      "default": 10,
+      "minimum": 1
+    }
+  },
+  "required": ["startUrls"]
+}

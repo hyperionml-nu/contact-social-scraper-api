@@ -1,0 +1,69 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "domain": {
+      "type": "string",
+      "title": "Domain"
+    },
+    "emails": {
+      "type": "array",
+      "title": "Emails",
+      "items": { "type": "string" }
+    },
+    "phones": {
+      "type": "array",
+      "title": "Phone Numbers",
+      "items": { "type": "string" }
+    },
+    "contactPage": {
+      "type": "string",
+      "title": "Contact Page"
+    },
+    "aboutPage": {
+      "type": "string",
+      "title": "About Page"
+    },
+    "facebook": {
+      "type": "string",
+      "title": "Facebook"
+    },
+    "instagram": {
+      "type": "string",
+      "title": "Instagram"
+    },
+    "linkedin": {
+      "type": "string",
+      "title": "LinkedIn"
+    },
+    "twitter": {
+      "type": "string",
+      "title": "Twitter / X"
+    },
+    "youtube": {
+      "type": "string",
+      "title": "YouTube"
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Extracted Contacts Overview",
+      "transformation": {
+        "fields": [
+          "domain",
+          "emails",
+          "phones",
+          "contactPage",
+          "aboutPage",
+          "facebook",
+          "instagram",
+          "linkedin",
+          "twitter",
+          "youtube"
+        ]
+      },
+      "display": {
+        "component": "table"
+      }
+    }
+  }
+}

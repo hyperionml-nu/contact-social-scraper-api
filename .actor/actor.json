@@ -1,0 +1,18 @@
+{
+  "actorSpecification": 1,
+  "name": "website-contact-social-scraper",
+  "title": "Website Contact & Social Scraper",
+  "description": "Extract emails, phone numbers, contact/about pages, and social media links from business websites.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "js-crawlee-cheerio",
+    "generatedBy": "Cursor with GPT-5.3 Codex"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "usesStandbyMode": true,
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
