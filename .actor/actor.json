@@ -6,7 +6,7 @@
   "version": "1.0",
   "meta": {
     "templateId": "js-crawlee-cheerio",
-    "generatedBy": "Cursor with GPT-5.3 Codex"
+    "generatedBy": "Codex with GPT-5"
   },
   "input": "./input_schema.json",
   "output": "./output_schema.json",
